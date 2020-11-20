@@ -1,2 +1,3 @@
 # html-css-2020
-Exercises for HTML &amp; CSS
+
+Hello! This is my first HTML & CSS project.
