@@ -1,14 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 body {
-    background-color: bisque;
+    background-color: rgb(235, 194, 145);
     font-family: sans-serif;
+    font-size: 14px;
 }
 h1 {
     color: darkgreen;
-    font-size: 25px;
+    font-size: 1.5em;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
 }
 h3 {
     color:tomato;
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 h5 {
     color: sienna;
+    font-size: 0.9em;
+}
+#pret-vechi {
+    text-decoration-line: line-through;
+    text-decoration-color: crimson;
+    text-decoration-thickness: 3px;
+    text-decoration-style: dotted;
 }
