@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+* {
+    box-sizing: border-box; 
+}
 html {
     scroll-behavior: smooth;
 }
@@ -56,15 +59,14 @@ blockquote {
     text-decoration-style: dotted;
     text-decoration-color: rgb(20, 150, 220);
     text-decoration-line: underline;
-    border-style: dotted;
+    border-style: solid;
     border-color: steelblue;
-    border-radius: 10px;
-    padding: 0.5em;
-    margin: 1em;
-    margin-top: 2em;
-    margin-left: 0;
-    width: 60%;
-    height: 5em;
+    border-radius: 20px;
+    padding: 1em 2em;
+    margin: 4em auto 3em auto;
+    width: 20em;
+    background-color: orange;
+    border-bottom-color: orangered;
 }
 ul {
     font-family: sans-serif;
@@ -74,4 +76,8 @@ ul {
 }
 .imagine {
     text-align: center;
+}
+.primul-cuvant {
+    color: orangered;
+    font-size: 1.2em;
 }
