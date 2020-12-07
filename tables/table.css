@@ -1,0 +1,21 @@
+table {
+    border-style: solid;
+    border-color: teal;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+td {
+    border-style: solid;
+    border-color: tomato;
+    padding: 0.5em;
+}
+th {
+    border-style: solid;
+    border-color: olive;
+    background-color: olive;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    padding-right: 0.5em;
+}

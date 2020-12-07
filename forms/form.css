@@ -1,0 +1,28 @@
+body {
+    height: 200vh;
+}
+input {
+    display: block;
+    margin: 0.2em 0 0.7em 0;
+}
+button {
+    display: block;
+    /* 
+        schimbam stilul butonului:
+    */
+    background-color: green;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,175,11,1) 0%, rgba(0,212,255,1) 100%);
+    border-style: none;
+    padding: 0.5em;
+    color: white;
+    border-radius: 0.5em;
+    width: 7em;
+}
+label {
+    font-family: sans-serif;
+    display: block;
+}
+select {
+    display: block;
+    margin-bottom: 0.5em;
+}
