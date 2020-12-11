@@ -1,0 +1,88 @@
+/* css rest */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+}
+header {
+    background-color: rgb(54, 54, 54);
+    text-align: center;
+    padding: 1em;
+}
+header li {
+    display: inline;
+}
+a {
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+    margin-right: 1.5em;
+    transition-duration: 1s;
+    display: inline-block;
+}
+a:hover {
+    color: sandybrown;
+    transform: scale(1.1);
+}
+article {
+    background-color: rgb(210, 210, 210);
+    text-align: center;
+    padding-bottom: 3em;
+}
+@keyframes colorize {
+    from {
+        color: black;
+    }
+    to {
+        color: orangered;
+    }
+}
+h1 {
+    font-family: monospace;
+    text-align: center;
+    padding: 1.5em;
+    animation-name: colorize;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+img {
+    height: 45vh;
+    transition-duration: 2s;
+}
+img:hover {
+    /* height: 50vh; */
+    transform: rotate(360deg);
+    transform: translate(-50px, -100px);
+    transform: scale(1.2);
+}
+article div {
+    display: inline-block;
+    vertical-align: middle;
+}
+article ul {
+    list-style-type: none;
+}
+article li {
+    padding: 1em;
+}
+input[type="button"] {
+    background-color: orange;
+    border-radius: 0.3em;
+    border-style: none;
+    padding: 0.3em 1em;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+footer {
+    background-color: rgb(39, 39, 39);
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+}
+p {
+    margin-bottom: 1em;
+}
