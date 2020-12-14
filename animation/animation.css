@@ -1,0 +1,38 @@
+div {
+    width: 5em;
+    height: 5em;
+    background-color: orangered;
+    animation-name: photobombing, colorize;
+    animation-duration: 1s, 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+@keyframes move {
+    25% {
+        transform: translateX(90vw) rotate(720deg);
+    }
+    50% {
+        transform: translate(90vw, 90vh) rotate(1440deg);
+    }
+    75% {
+        transform: translate(0, 90vh) rotate(2160deg);
+    }
+}
+@keyframes photobombing {
+    from {
+        transform: translateX(-5em);
+    }
+    60% {
+        transform: translateX(60vw);
+    }
+    to {
+        transform: translateX(45vw);
+    }
+}
+@keyframes colorize {
+    to {
+        background-color: seagreen;
+    }
+}
