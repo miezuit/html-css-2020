@@ -1,0 +1,9 @@
+body {
+    font-size: 1.5em;
+}
+#parallax, #parallax2 {
+    background-image: url("back.jpg");
+    background-size: cover;
+    height: 75vh;
+    background-attachment: fixed;
+}
