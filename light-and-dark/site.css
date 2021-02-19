@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    --black: rgb(38, 38, 38);
+    background-color: var(--black);
+    color: rgb(231, 231, 231);
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+    margin: 1.5em;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 1em;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+#switch {
+    font-size: 1.5em;
+}
+div {
+    height: 40vh;
+    background-image: url(moon.jpg);
+    background-size: cover;
+    background-position-y: -10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--black);
+}
