@@ -1,0 +1,4 @@
+body {
+    --back-color: rgb(38, 38, 38);
+    --font-color: rgb(231, 231, 231);
+}

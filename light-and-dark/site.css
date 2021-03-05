@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    --black: rgb(38, 38, 38);
-    background-color: var(--black);
-    color: rgb(231, 231, 231);
+    background-color: var(--back-color);
+    color: var(--font-color);
     font-family: sans-serif;
 }
 h1 {
@@ -16,14 +15,18 @@ h1 {
 nav ul {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 nav ul li {
-    margin: 0 1em;
+    margin: 0.5em 1em;
     list-style-type: none;
     text-transform: uppercase;
 }
 #switch {
     font-size: 1.5em;
+    position: relative;
+    top: -0.1em;
+    cursor: pointer;
 }
 div {
     height: 40vh;
@@ -34,5 +37,5 @@ div {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: var(--black);
+    color: var(--back-color);
 }
