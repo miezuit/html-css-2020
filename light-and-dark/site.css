@@ -22,7 +22,8 @@ nav ul li {
     list-style-type: none;
     text-transform: uppercase;
 }
-#switch {
+#switch::before {
+    content: var(--symbol);
     font-size: 1.5em;
     position: relative;
     top: -0.1em;
