@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div {
+    width: 50vw;
+    background-color: rgb(241, 220, 107);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%; 
+}
+h3 {
+    text-align: center;
+}
+h3::before, h3::after {
+    content: "xxx";
+    padding: 0 0.5em;
+    color: orangered;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+}
