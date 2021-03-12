@@ -1,4 +1,5 @@
 document.querySelector("#switch")
+
 .addEventListener("click", changeTheme)
 
 var theme = localStorage.getItem("theme")
@@ -8,6 +9,21 @@ function setTheme(theme) {
     css.disabled = theme == "light" ? true : false 
 //     let symbol = css.disabled ? "&#9789;" : "&#9788;"
 // document.querySelector("#switch").innerHTML= symbol
+      // css.disabled = css.disabled ? false : true
+
+    // if (css.disabled) {
+    //     css.disabled = false
+    // } else {
+    //     css.disabled = true
+    // }
+
+    // switch(css.disabled) {
+    //     case true:
+    //         css.disabled = false
+    //         break
+    //     default:
+    //         css.disabled = true
+    // }
 localStorage.setItem("theme",theme)
 }
 function changeTheme(){
@@ -15,6 +31,5 @@ function changeTheme(){
     setTheme(theme)
     
 }
-
 
 
