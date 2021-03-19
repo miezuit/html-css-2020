@@ -1,0 +1,45 @@
+.cube {
+    --size: 8em;
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    top: 5em;
+    left: 45vw;
+    perspective: 300px;
+    transform-style: preserve-3d;
+    animation-name: perspective;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.side {
+    --offset: calc(var(--size) / 2);
+    width: var(--size);
+    height: var(--size);
+    background-color: rgba(220, 50, 20, 0.502);
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.701);
+    position: absolute;
+    text-align: center;
+    line-height: var(--size);
+    transform: translateZ(var(--offset));
+}
+.side span {
+    font-size: 4em;
+}
+
+.left { transform: rotateY(-90deg) translateZ(var(--offset)); }
+.top { transform: rotateX(90deg) translateZ(var(--offset)); }
+.bottom { transform: rotateX(-90deg) translateZ(var(--offset)); }
+.right { transform: rotateY(90deg) translateZ(var(--offset)); }
+.back { transform: rotateX(-180deg) translateZ(var(--offset)); }
+
+@keyframes perspective {
+    0% { perspective-origin: 50% 50%; }
+    25% { perspective-origin: 100% 0%; }
+    50% { perspective-origin: 100% 100%; }
+    75% { perspective-origin: 0% 100%; }
+    100% { perspective-origin: 0% 0%; }
+}
