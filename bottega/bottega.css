@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    #homepage {
+        background-size: 30%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+    #homepage {
+        background-size: 25%;
+    }
+}
+#homepage {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(https://raw.githubusercontent.com/miezuit/html_css/master/bottega/img/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#homepage h1 {
+    font-family: Tenez;
+    font-size: 6em;
+    margin-bottom: 0.3em;
+}
+#homepage a {
+    font-family: "futura-pt";
+    font-size: 2em;
+}
