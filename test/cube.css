@@ -1,0 +1,35 @@
+.cube {
+    font-size: 5em;
+    width: 2em;
+    height: 2em;
+    margin: 1em auto;
+    /* transform-style: preserve-3d; */
+    perspective: 500px;
+    /* animation: move-origin infinite 10s; */
+  }
+  
+  .side {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: rgba(255, 99, 71, 0.486);
+    border: 1px solid rgba(0,0,0,0.5);
+    color: white; 
+    text-align: center;
+    line-height: 2em;
+  }
+  
+  .front  { transform: translateZ(0em); }
+  .top    { transform: rotateX( 90deg)  translateZ(0em); }
+  .right  { transform: rotateY( 90deg)  translateZ(0em); }
+  .left   { transform: rotateY(-90deg)  translateZ(0em); }
+  .bottom { transform: rotateX(-90deg)  translateZ(0em); }
+  .back   { transform: rotateY(-180deg) translateZ(2em); }
+  
+  @keyframes move-origin {
+    0%    { perspective-origin: 0%     0%; }
+    25%   { perspective-origin: 100%   0%; }
+    50%   { perspective-origin: 100% 100%; }
+    75%   { perspective-origin: 0%   100%; }
+    100%  { perspective-origin: 0%     0%; }
+  }
