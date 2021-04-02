@@ -24,14 +24,20 @@
         background-size: 25%;
     }
 }
-#homepage {
-    background-color: black;
-    color: white;
+
+body {
+    overflow: hidden;
+}
+#homepage, #lastpage {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+#homepage {
+    background-color: black;
+    color: white;
     background-image: url(https://raw.githubusercontent.com/miezuit/html_css/master/bottega/img/1.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -41,7 +47,44 @@
     font-size: 6em;
     margin-bottom: 0.3em;
 }
-#homepage a {
+#enter, #back {
     font-family: "futura-pt";
     font-size: 2em;
+    cursor: pointer;
+}
+#back {
+    color: white;
+}
+#lastpage {
+    background-color: rgb(205, 92, 92);
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    width: 100vw;
+}
+#photos {
+    margin-bottom: 2em;
+}
+@keyframes slide-in {
+    to {
+        left: 0;
+    }
+}
+.slide-in, .slide-out {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.slide-in {
+    animation-name: slide-in;
+}
+@keyframes slide-out {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100vw;
+    }
+}
+.slide-out {
+    animation-name: slide-out;
 }

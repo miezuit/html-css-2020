@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#container {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    perspective: 6px;
+}
+#back {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    transform: translateZ(0px);
+}
+#front {
+    position: absolute;
+    top: 70vh;
+    left: 40vw;
+    transform: translateZ(3px);
+}
