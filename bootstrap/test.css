@@ -7,3 +7,10 @@
 #carouselExampleInterval img {
     width: 50%!important;
 }
+.alert {
+    margin: 1em;
+    border-radius: 1em;
+}
+#carouselExampleControls {
+    width: 50vw;
+}
